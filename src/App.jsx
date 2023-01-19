@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import LeftSide from "./components/LeftSide/LeftSide.jsx";
+import RightSide from "./components/RightSide/RightSide.jsx";
 
 export default class App extends Component {
     constructor() {
@@ -7,7 +9,10 @@ export default class App extends Component {
 
     render() {
         return (
-            <h1>HI BITCHES!!</h1>
+            <div className="big-container">
+                <LeftSide />
+                <RightSide />
+            </div>
         )
     }
 }
