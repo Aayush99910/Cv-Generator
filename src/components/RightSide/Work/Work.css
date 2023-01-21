@@ -1,11 +1,11 @@
-.education-container {
+.work-container {
     padding: 10px;
     font-family: 'Lexend', sans-serif;
     font-size: 15px;
     color: rgb(20, 20, 20);
 }
 
-.education-card-container {
+.work-card-container {
     width: 100%;
     margin-top: 10px;
     display: flex;

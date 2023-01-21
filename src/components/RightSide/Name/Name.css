@@ -1,6 +1,7 @@
 .name-container {
     font-family: 'Lexend', sans-serif;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .name-container h1 {
