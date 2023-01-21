@@ -31,15 +31,10 @@
     padding-right: 5px;
     color: rgb(236, 236, 236);
 }
-
-.profile-container, 
+ 
 .contact-container,
 .skill-container {
     margin-top: 15px;
-}
-
-.profile-container h3 {
-    background-color: #2082B9;
 }
 
 .skill-container h3 {
