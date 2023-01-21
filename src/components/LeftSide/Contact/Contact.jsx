@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Card from "./Card.jsx"
+import address from "../../../assets/home.png";
+import phone from "../../../assets/phone.png"
+import email from "../../../assets/mail.png";
 import "./Contact.css";
 
 
@@ -10,16 +13,19 @@ export default class Contact extends Component {
             {
                 id: 0,
                 title: "Address",
+                photo: address,
                 description: "2714 Santa Clara, California"
             },
             {
                 id: 1,
                 title: "Phone",
+                photo: phone,
                 description: "(980)-987-0989"
             },
             {
                 id: 2,
                 title: "Email",
+                photo: email,
                 description: "someone123@email.com"
             }
         ]
@@ -27,6 +33,7 @@ export default class Contact extends Component {
         // mapping over each element and returning a Card component
         const cardElements = cards.map(card => {
             return <Card 
+                    photo={card.photo}
                     title={card.title}
                     description={card.description}
                     key={card.id} />
@@ -34,7 +41,7 @@ export default class Contact extends Component {
 
         return (
             <div className="contact-container">
-                <h3>Contacts</h3>
+                <h3>CONTACTS</h3>
                 {cardElements}
             </div>
         )

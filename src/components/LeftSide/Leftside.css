@@ -1,5 +1,51 @@
 .left-container {
     width: var(--large-device-left-container-width);
-    background-color: rgb(32, 30, 30);
+    background-color: rgb(46, 41, 41);
     color: rgb(214, 212, 212);
+}
+
+.left-container h3 {
+    font-size: 26px;
+    padding: 2px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    background-color: #B92020;
+    color: rgb(236, 236, 236);
+    margin-bottom: 8px;
+}
+
+.left-container h5 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(236, 236, 236);
+    padding-left: 5px;
+}
+
+.left-container p {
+    font-size: 18px;
+    font-family: 'Sofia Sans', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(236, 236, 236);
+}
+
+.profile-container, 
+.contact-container,
+.skill-container {
+    margin-top: 15px;
+}
+
+.profile-container h3 {
+    background-color: #2082B9;
+}
+
+.skill-container h3 {
+    background-color: #3EA354;
+}
+
+.skill-container {
+    margin-bottom: 10px;
 }

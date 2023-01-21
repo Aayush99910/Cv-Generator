@@ -1,0 +1,8 @@
+.contact-card {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-card img {
+    height: 50px;
+}

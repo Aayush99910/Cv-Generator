@@ -1,0 +1,19 @@
+.user-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(177, 177, 177);
+}
+
+.user-photo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}

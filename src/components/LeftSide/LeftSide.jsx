@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Photo from "./Photo/Photo";
 import Profile from "./Profile/Profile";
 import Contact from "./Contact/Contact";
 import Skill from "./Skill/Skill";
@@ -8,7 +9,7 @@ export default class LeftSide extends Component {
     render() {
         return (
             <div className="left-container">
-                {/* <Photo /> */}
+                <Photo />
                 <Profile />
                 <Contact />
                 <Skill />

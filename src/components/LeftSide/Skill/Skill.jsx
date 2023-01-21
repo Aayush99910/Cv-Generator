@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SkillCard from "./SkillCard";
+import "./Skill.css"
 
 
 export default class Skill extends Component {
@@ -7,27 +8,27 @@ export default class Skill extends Component {
         const skillLevels = [
             {
                 id: 0,
-                title: "Html",
+                title: "Html-->",
                 level: "Advanced"
             },
             {
                 id: 1,
-                title: "Css",
+                title: "Css-->",
                 level: "Intermediate"
             },
             {
                 id: 2,
-                title: "Javascript",
+                title: "Javascript-->",
                 level: "Intermediate"
             },
             {
                 id: 3,
-                title: "React",
+                title: "React-->",
                 level: "Beginner"
             },
             {
                 id: 4,
-                title: "Python",
+                title: "Python-->",
                 level: "Intermediate"
             },
         ]
@@ -42,6 +43,7 @@ export default class Skill extends Component {
 
         return (
             <div className="skill-container">
+                <h3>SKILLS</h3>
                 {skillLevelElements}
             </div>
         )
