@@ -9,9 +9,14 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className="big-container">
-                <LeftSide />
-                <RightSide />
+            <div>
+                {/* <div className="edit-preview">
+                    Edit Mode Or Preview Mode
+                </div> */}
+                <div className="big-container">
+                    <LeftSide />
+                    <RightSide />
+                </div>
             </div>
         )
     }

@@ -20,6 +20,14 @@ root color
     margin: 0;;
 }
 
+.edit-preview {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    background-color: rgb(80, 80, 179);
+}
+
 .big-container {
     box-sizing: border-box;
     background-color: rgb(228, 228, 228);
