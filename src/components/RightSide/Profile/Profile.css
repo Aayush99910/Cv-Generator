@@ -1,9 +1,10 @@
 .profile-container {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .profile-container p {
-    font-size: 18px;
+    font-size: 22px;
+    margin-top: 15px;
 }

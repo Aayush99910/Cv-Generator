@@ -1,9 +1,10 @@
 .right-container {
     width: var(--large-device-right-container-width);  
     background-color: rgb(236, 236, 236);
+    padding: 30px;
 }
 
 .education-container,
 .work-container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
