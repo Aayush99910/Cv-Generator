@@ -46,12 +46,14 @@ export default class Name extends Component {
                     this.state.isEditing ? 
                     <div>
                         <form onSubmit={this.submitForm}>
-                            <input  type="text" 
+                            <input  autoComplete="off"
+                                    type="text" 
                                     name="username" 
                                     onChange={this.handleChange} 
                                     value={this.state.username}
                             />
-                            <input  type="text" 
+                            <input  autoComplete="off"
+                                    type="text" 
                                     name="job" 
                                     onChange={this.handleChange} 
                                     value={this.state.job}
