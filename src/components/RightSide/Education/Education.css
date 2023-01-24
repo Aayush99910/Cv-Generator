@@ -9,5 +9,46 @@
     width: 100%;
     margin-top: 10px;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+}
+
+.date-details-container {
+    display: flex;
+}
+
+.education-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    width: 150px;
+}
+
+.delete-button {
+    font-size: 20px;
+    color: var(--red-color);
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.h {
+    margin-bottom: 8px;
+}
+
+.add-button, 
+.cancel-button {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.add-button {
+    color: var(--green-color);
+}
+
+.cancel-button {
+    color: var(--red-color);
 }
