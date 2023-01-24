@@ -11,7 +11,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 400;
-    background-color: #B92020;
+    background-color: var(--red-color);
     color: rgb(236, 236, 236);
     margin-bottom: 8px;
 }
@@ -38,7 +38,7 @@
 }
 
 .skill-container h3 {
-    background-color: #3EA354;
+    background-color: var(--green-color);
 }
 
 .skill-container {
