@@ -94,7 +94,6 @@ export default class Work extends Component {
     }
 
     render() {
-        console.log(this.state.works);
         const workElements = this.state.works.map(work => {
             return <WorkCard id={work.id} key={work.id} data={work} deleteFunc={this.delete}/>
         })
