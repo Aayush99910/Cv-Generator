@@ -1,5 +1,6 @@
 .profile-container {
     padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
     padding-right: 10px;
 }
 
@@ -20,8 +21,9 @@ textarea {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    font-family: 'Open Sans', sans-serif;
     height: 60px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
 }
