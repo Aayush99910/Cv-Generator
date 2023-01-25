@@ -1,5 +1,4 @@
 .profile-container {
-    font-family: 'Roboto', sans-serif;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -23,7 +22,6 @@ textarea {
     padding: 10px;
     height: 60px;
     margin-bottom: 10px;
-    font-family: 'Lexend', sans-serif;
     font-size: 16px;
     margin-top: 20px;
 }
