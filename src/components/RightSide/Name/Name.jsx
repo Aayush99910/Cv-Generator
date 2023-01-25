@@ -47,12 +47,14 @@ export default class Name extends Component {
                     <div>
                         <form onSubmit={this.submitForm}>
                             <input  autoComplete="off"
+                                    placeholder="Your full name"
                                     type="text" 
                                     name="username" 
                                     onChange={this.handleChange} 
                                     value={this.state.username}
                             />
                             <input  autoComplete="off"
+                                    placeholder="Your current profession"
                                     type="text" 
                                     name="job" 
                                     onChange={this.handleChange} 
