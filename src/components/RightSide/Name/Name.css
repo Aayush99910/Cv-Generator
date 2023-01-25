@@ -18,29 +18,3 @@
     font-weight: 300;
 }
 
-input[type=text] {
-    padding: 5px;
-    margin-bottom: 8px;
-    font-family: 'Lexend', sans-serif;
-    border: none;
-    font-size: 20px;
-    border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    display: block;
-}
-
-.edit-button {
-    cursor: pointer;
-}
-
-.submit-button {
-    background-color: #53b969;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
