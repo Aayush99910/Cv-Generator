@@ -59,11 +59,12 @@ export default class Name extends Component {
                                     value={this.state.job}
                             />
                             <button className="submit-button">Submit</button>
+                            <button className="cancel-button" onClick={this.changeEditingState}>Cancel</button>
                         </form>
                     </div> :
                     <div>
                         <h1>{this.state.username}</h1>
-                        <FiEdit className="edit-button" onClick={this.changeEditingState}/>
+                        <FiEdit className="name-edit-button" onClick={this.changeEditingState}/>
                         <p>{this.state.job}</p>
                     </div>
                 }
