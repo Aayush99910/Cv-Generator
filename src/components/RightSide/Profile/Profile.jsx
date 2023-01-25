@@ -45,6 +45,7 @@ export default class Profile extends Component {
                                     value={this.state.description}
                             />
                             <button className="submit-button">Submit</button>
+                            <button className="cancel-button" onClick={this.changeEditing}>Cancel</button>
                         </form>
                     </div> :
                     <div>
