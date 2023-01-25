@@ -110,7 +110,7 @@ export default class Education extends Component {
                         <hr></hr>
                         <div className="education-heading">
                             <h1>EDUCATION</h1>
-                            <MdCancel className="cancel-button" onClick={this.changeEditingMode}/>
+                            <MdCancel className="education-cancel-button" onClick={this.changeEditingMode}/>
                         </div>
                         <hr className="h"></hr>
                         <form onSubmit={this.handleFormSubmit}>
@@ -157,8 +157,8 @@ export default class Education extends Component {
                                 onChange={this.handleChange}
                             />
                             <div>
-                                <button>Add</button>
-                                <button onClick={this.changeEditingMode}>Cancel</button>
+                                <button className="submit-button">Submit</button>
+                                <button className="cancel-button" onClick={this.changeEditingMode}>Cancel</button>
                             </div>
                         </form>
                         {educationElements}
