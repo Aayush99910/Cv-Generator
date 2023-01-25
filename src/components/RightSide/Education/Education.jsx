@@ -3,11 +3,13 @@ import EducationCard from "./EducationCard";
 import "./Education.css";
 import {IoMdAddCircle} from 'react-icons/io';
 import {MdCancel} from "react-icons/md";
+import { nanoid } from "nanoid";
 
 export default class Education extends Component {
     state = {
         isEditing: false,
         education: {
+            id: nanoid(),
             from: '',
             to: '',
             university: '',
@@ -17,6 +19,7 @@ export default class Education extends Component {
         },
         educations: [
             {
+                id: nanoid(),
                 from: 2019,
                 to: 2021,
                 university: 'Xavier Academy',
@@ -25,6 +28,7 @@ export default class Education extends Component {
                 subject: 'Science'
             },
             {
+                id: nanoid(),
                 from: 2023,
                 to: 'Present',
                 university: 'San Fransisco Bay University',
@@ -36,13 +40,12 @@ export default class Education extends Component {
     } 
 
     delete = (e) => {
-        const universityAndCity = e.target.parentElement.parentElement.parentElement.getElementsByClassName('date-details-container')[0].children[1].getElementsByTagName('h3')[0].innerHTML;
-        const university = universityAndCity.split(',')[0];
+        const id = e.target.parentElement.parentElement.parentElement.id;
 
         this.setState(prevState => {
             const oldState = prevState.educations;
             const newState = oldState.filter(function(eachItem) {
-                if (eachItem.university == university) {
+                if (eachItem.id == id) {
                     return false;
                 } else {
                     return true;
@@ -81,6 +84,7 @@ export default class Education extends Component {
             return {
                 educations: [...prevState.educations, this.state.education],
                 education: {
+                    id: nanoid(),
                     from: '',
                     to: '',
                     university: '',
@@ -94,10 +98,8 @@ export default class Education extends Component {
     }
 
     render() {
-        console.log(this.state);
-
-        const educationElements = this.state.educations.map((education, index) => {
-            return <EducationCard key={index} data={education} deleteFunc={this.delete}/>
+        const educationElements = this.state.educations.map(education => {
+            return <EducationCard id={education.id} key={education.id} data={education} deleteFunc={this.delete}/>
         })
 
         return (

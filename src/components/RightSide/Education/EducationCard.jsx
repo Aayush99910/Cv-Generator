@@ -4,7 +4,7 @@ import {AiFillDelete} from 'react-icons/ai';
 export default class EducationCard extends Component {
     render() {
         return (
-            <div className="education-card-container">
+            <div className="education-card-container" id={this.props.id}>
                 <div className="date-details-container">
                     <div className="date">
                         <h3>{this.props.data.from} - {this.props.data.to}</h3>
