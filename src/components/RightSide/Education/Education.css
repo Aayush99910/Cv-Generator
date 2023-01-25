@@ -40,7 +40,7 @@
 }
 
 .add-button, 
-.cancel-button {
+.education-cancel-button {
     font-size: 25px;
     cursor: pointer;
 }
@@ -49,6 +49,6 @@
     color: var(--green-color);
 }
 
-.cancel-button {
+.education-cancel-button {
     color: var(--red-color);
 }
