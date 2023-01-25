@@ -107,7 +107,7 @@ export default class Work extends Component {
                         <hr></hr>
                         <div className="work-heading">
                             <h1>WORK EXPERIENCE</h1>
-                            <MdCancel className="cancel-button" onClick={this.changeEditingMode}/>
+                            <MdCancel className="work-cancel-button" onClick={this.changeEditingMode}/>
                         </div>
                         <hr className="h"></hr>
                         <form onSubmit={this.handleFormSubmit}>
@@ -147,8 +147,8 @@ export default class Work extends Component {
                                 onChange={this.handleChange}
                             />
                             <div>
-                                <button>Add</button>
-                                <button onClick={this.changeEditingMode}>Cancel</button>
+                                <button className="submit-button">Submit</button>
+                                <button className="cancel-button" onClick={this.changeEditingMode}>Cancel</button>
                             </div>
                         </form>
                         {workElements}
