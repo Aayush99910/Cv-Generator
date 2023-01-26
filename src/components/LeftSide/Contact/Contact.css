@@ -1,6 +1,11 @@
+.contact-container {
+    font-family: 'Exo 2', sans-serif;
+}
+
 .contact-card {
     display: flex;
     margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contact-card img {
