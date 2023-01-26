@@ -1,6 +1,6 @@
 .left-container {
     width: var(--large-device-left-container-width);
-    background-color: rgb(19, 87, 212);
+    background-color: var(--left-container-bg-color);
     color: rgb(214, 212, 212);
 }
 
@@ -10,7 +10,7 @@
     letter-spacing: 1px;
     text-align: center;
     font-weight: 400;
-    background-color: var(--red-color);
+    background-color: var(--h3-background-color);
     color: rgb(236, 236, 236);
     margin-bottom: 8px;
 }
@@ -34,9 +34,6 @@
     margin-top: 15px;
 }
 
-.skill-container h3 {
-    background-color: var(--green-color);
-}
 
 .skill-container {
     margin-bottom: 10px;
