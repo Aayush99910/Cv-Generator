@@ -103,7 +103,6 @@ export default class Work extends Component {
                 {
                     this.state.isEditing ? 
                     <div>
-                        <hr></hr>
                         <div className="work-heading">
                             <h1>WORK EXPERIENCE</h1>
                             <MdCancel className="work-cancel-button" onClick={this.changeEditingMode}/>
@@ -153,7 +152,6 @@ export default class Work extends Component {
                         {workElements}
                     </div> :
                     <div>
-                        <hr></hr>
                         <div className="work-heading">
                             <h1>WORK EXPERIENCE</h1>
                             <IoMdAddCircle className="add-button" onClick={this.changeEditingMode}/>
