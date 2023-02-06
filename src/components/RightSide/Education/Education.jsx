@@ -107,7 +107,6 @@ export default class Education extends Component {
                 {
                     this.state.isEditing ? 
                     <div>
-                        <hr></hr>
                         <div className="education-heading">
                             <h1>EDUCATION</h1>
                             <MdCancel className="education-cancel-button" onClick={this.changeEditingMode}/>
@@ -164,7 +163,6 @@ export default class Education extends Component {
                         {educationElements}
                     </div> :
                     <div>
-                        <hr></hr>
                         <div className="education-heading">
                             <h1>EDUCATION</h1>
                             <IoMdAddCircle className="add-button" onClick={this.changeEditingMode}/>
