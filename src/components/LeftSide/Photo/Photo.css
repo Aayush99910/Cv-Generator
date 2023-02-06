@@ -6,14 +6,28 @@
 }
 
 .user-photo {
+    display: flex;
     height: 180px;
-    width: 180px;
+    width: 200px;
     border-radius: 50%;
-    background-color: rgb(177, 177, 177);
 }
 
 .user-photo img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.photo-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.edit-button:hover {
+    cursor: pointer;
 }
