@@ -4,12 +4,14 @@ import address from "../../../assets/home.png";
 import phone from "../../../assets/phone.png"
 import email from "../../../assets/mail.png";
 import "./Contact.css";
+import {FiEdit} from 'react-icons/fi';
+
 
 
 export default class Contact extends Component {
-    render() {
-        // card array having various information about the card in contact component
-        const cards = [
+    state = {
+        isEditing: false,
+        cards: [
             {
                 id: 0,
                 title: "Address",
@@ -29,9 +31,52 @@ export default class Contact extends Component {
                 description: "someone123@email.com"
             }
         ]
- 
-        // mapping over each element and returning a Card component
-        const cardElements = cards.map(card => {
+    }
+
+    changeEditingMode = () => {
+        this.setState(prevState => {
+            return {
+                isEditing: !prevState.isEditing
+            }
+        })
+    }
+
+
+    handleChange = (e) => {
+        const {name, value} = e.target;
+        this.setState(prevState => {
+            const newState = [];
+            prevState.cards.map(eachState => {
+                if (eachState.title == name) {
+                    newState.push(
+                        {
+                            ...eachState,
+                            description: value
+                        }
+                    )
+                } else {
+                    newState.push(
+                        {
+                            ...eachState
+                        }
+                    )
+                }
+            })
+            
+            return {
+                cards: [...newState]
+            }
+        })
+    }
+    
+    
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.changeEditingMode();
+    }
+
+    render() {
+        const cardElements = this.state.cards.map(card => {
             return <Card 
                     photo={card.photo}
                     title={card.title}
@@ -41,8 +86,46 @@ export default class Contact extends Component {
 
         return (
             <div className="contact-container">
-                <h3>CONTACTS</h3>
-                {cardElements}
+                {
+                    this.state.isEditing ? 
+                    <form className="contact-form-container" onSubmit={this.handleSubmit}>
+                        <input 
+                                id="contactInput"
+                                autoComplete="off"
+                                type="text"
+                                placeholder="Your full address"
+                                name="Address"
+                                onChange={this.handleChange}
+                        />
+                        <input 
+                                id="contactInput"
+                                autoComplete="off"
+                                type="text"
+                                placeholder="Phone Number"
+                                name="Phone"
+                                onChange={this.handleChange}
+                        />
+                        <input 
+                                id="contactInput"
+                                autoComplete="off"
+                                type="text"
+                                placeholder="Email Address"
+                                name="Email"
+                                onChange={this.handleChange}
+                        />
+                        <div>
+                            <button className="submit-button">Submit</button>
+                            <button className="cancel-button" type="button" onClick={this.changeEditingMode}>Cancel</button>
+                        </div>
+                    </form> :
+                    <div>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <h3>CONTACTS</h3> &nbsp; &nbsp; 
+                            <button className="edit-button-contact" onClick={this.changeEditingMode}><FiEdit /></button>
+                        </div>
+                        {cardElements}
+                    </div>
+                }
             </div>
         )
     }

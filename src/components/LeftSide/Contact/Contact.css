@@ -2,12 +2,40 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+.edit-button-contact {
+    background: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
 .contact-card {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .contact-card img {
     height: 50px;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactInput {
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgb(251, 251, 251);
+    height: 20px;
+    display: block;
+    font-family: 'Roboto Mono', sans-serif;
 }
