@@ -11,7 +11,7 @@ export default class LeftSide extends Component {
             <div className="left-container">
                 <Photo />
                 <Contact />
-                <Skill />
+                {/* <Skill /> */}
             </div>    
         )
     }
