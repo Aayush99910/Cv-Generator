@@ -2,8 +2,8 @@
 
 
 :root {
-    --large-device-left-container-width: 20%;
-    --large-device-right-container-width: 80%;
+    --large-device-left-container-width: 25%;
+    --large-device-right-container-width: 75%;
     --medium-device-left-container-width: 30%;
     --medium-device-right-container-width: 70%;
     --small-device-left-container-width: 40%;
